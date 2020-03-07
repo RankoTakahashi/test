@@ -1,0 +1,4 @@
+-git status 状態を見る
+-git add 保存する準備
+-git log 保存されたデータを見る
+-git push ネット上の保存場所にデータを送る
