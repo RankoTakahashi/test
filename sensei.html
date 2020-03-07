@@ -1,0 +1,87 @@
+# aliases 再読み込み[source .bash_profile]
+## git
+alias g="git"
+alias gi="git init"
+alias gcm="git commit -m"
+alias gcma="git commit --amend"
+alias gcl="git clone --recursive"
+alias gc="git checkout"
+alias gcp="git cherry-pick"
+alias gcpn="git cherry-pick -n"
+alias gb="git branch"
+alias gba="git branch -a"
+alias gbf="git mkbr -f"
+alias gbb="git mkbr -b"
+alias gbr="git mkbr -r"
+alias gbh="git mkbr -h"
+alias gbp="git mkbr -p"
+alias ga="git add"
+alias gm="git merge"
+alias gp="git ex push"
+alias gpl="git pull"
+alias grs="git reset --soft"
+alias grs1="git reset --soft HEAD~1"
+alias grs2="git reset --soft HEAD~2"
+alias grs3="git reset --soft HEAD~3"
+alias grs4="git reset --soft HEAD~4"
+alias grh="git reset --hard"
+alias grh1="git reset --hard HEAD~1"
+alias grh2="git reset --hard HEAD~2"
+alias grh3="git reset --hard HEAD~3"
+alias grh4="git reset --hard HEAD~4"
+alias gl="git log"
+alias glg="git log --graph --pretty=format:'%C(yellow)%h%C(green)%d%Creset %s %Cblue[%ad]%C(bold blue)<%an>%Creset' --abbrev-commit --date=short --branches --remotes"
+alias glp="git log --decorate --stat --patch"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias gdw="git diff --color-words"
+alias gdcw="git diff --cached --color-words"
+alias gr="git rebase"
+alias gri2="git rebase -i HEAD~2"
+alias gri3="git rebase -i HEAD~3"
+alias gri4="git rebase -i HEAD~4"
+alias gri5="git rebase -i HEAD~5"
+alias gri6="git rebase -i HEAD~6"
+alias gs="git status"
+alias gst="git stash"
+alias gf="git fetch"
+alias gfo="git fetch origin"
+alias gfa="git fetch --all"
+alias gr.="git remote"
+alias gr.a="git remote add"
+alias gr.s="git remote show"
+alias gr.rb="git remove-remote-branch"
+alias gr.p="git remote prune"
+alias gr.po="git remote prune origin"
+alias gsm="git submodule"
+alias gdt="git difftool"
+alias gmt="git mergetool"
+alias gt="git ex tag"
+alias gpr="hub pull-request"
+alias gbk="git bk"
+alias gph="git push origin HEAD"
+alias gcb="git checkout -b"
+alias gcf="git checkout --force"
+alias grsh="git reset --soft HEAD^"
+alias gbd="git branch --delete"
+## 画像圧縮png
+
+alias png="pngquant --ext .png --force --speed 1"
+
+## コマンド
+
+alias ls="ls -a"
+
+alias c.="cd ../"
+
+alias c..="cd ../../"
+
+alias c...="cd ../../../"
+
+## エディター
+
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+翻訳を見る
